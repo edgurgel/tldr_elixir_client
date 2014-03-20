@@ -1,0 +1,10 @@
+[ "exactor": {:git, "git://github.com/sasa1977/exactor.git", "f7f6bae7fead5e0e5525581d44311f803169fa4e", []},
+  "exprintf": {:git, "git://github.com/parroty/exprintf.git", "586c8e07c65805cf8e53d5855bbb7fd1472b777a", []},
+  "exvcr": {:git, "git://github.com/parroty/exvcr.git", "0d26407c1231ca9c22b237feb8c0586e0b8ef330", []},
+  "hackney": {:git, "git://github.com/benoitc/hackney.git", "7f2a0b5996313d930277786e7ff5d538e9346547", [tag: "0.10.1"]},
+  "hackney_lib": {:git, "https://github.com/benoitc/hackney_lib.git", "eecdb481f1d38bfb194896bffdf9bdcdd967ae96", [tag: "0.2.2"]},
+  "httpoison": {:git, "git://github.com/edgurgel/httpoison.git", "d2bde2efdf122cd4d33fa748c599c45425f7b1a2", [tag: "0.0.2"]},
+  "jsex": {:git, "git://github.com/talentdeficit/jsex.git", "65aa6ae7c1543a0c4e83032c04626af7be7a7f3e", []},
+  "jsx": {:git, "git://github.com/talentdeficit/jsx.git", "e50af6e109cb03bd26acf715cbc77de746507d1d", [tag: "v1.4.3"]},
+  "meck": {:git, "git://github.com/eproxus/meck.git", "ea4ff6ed6a60780478aa1ac86e37c239715b19bf", []},
+  "mimetypes": {:git, "git://github.com/spawngrid/mimetypes.git", "47d37a977a7d633199822bf6b08353007483d00f", [ref: "master"]} ]

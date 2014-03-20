@@ -1,0 +1,48 @@
+[
+  {
+    "request": {
+      "url": "https://raw.github.com/rprieto/tldr/master/pages/common/ls.md",
+      "headers": {
+        "User-agent": "TLDR Elixir client"
+      },
+      "method": "get",
+      "body": "",
+      "options": {
+        "connect_timeout": 5000
+      }
+    },
+    "response": {
+      "type": "ok",
+      "status_code": 200,
+      "headers": {
+        "Date": "Sat, 22 Mar 2014 07:54:30 GMT",
+        "Server": "GitHub.com",
+        "Content-Type": "text/plain; charset=utf-8",
+        "Status": "200 OK",
+        "Strict-Transport-Security": "max-age=31536000",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "deny",
+        "Content-Security-Policy": "default-src *; script-src https://github.global.ssl.fastly.net https://ssl.google-analytics.com https://collector-cdn.github.com; style-src 'self' 'unsafe-inline' https://github.global.ssl.fastly.net; object-src https://github.global.ssl.fastly.net",
+        "X-RateLimit-Limit": "100",
+        "X-RateLimit-Remaining": "100",
+        "Access-Control-Allow-Origin": "https://render.github.com",
+        "X-Git-Blob-Oid": "c53fd4f52c09e65be5b09d1f29992338b240290c",
+        "Content-Disposition": "inline",
+        "Content-Transfer-Encoding": "binary",
+        "ETag": "\"67216f2fb511ba6f8b140bb55e50eae3\"",
+        "X-GitHub-Request-Id": "C71B4D18:5AA2:385E177:532D41B6",
+        "Content-Length": "410",
+        "Accept-Ranges": "bytes",
+        "Via": "1.1 varnish",
+        "Age": "0",
+        "X-Served-By": "cache-sv61-SJC3",
+        "X-Cache": "MISS",
+        "X-Cache-Hits": "0",
+        "Vary": "Accept-Encoding",
+        "Cache-Control": "private"
+      },
+      "body": "# ls\n\n> List directory contents\n\n- List all files, even hidden\n\n`ls -a`\n\n- List all file names (no extra info)\n\n`ls -A1`\n\n- List all files with their rights, groups, owner\n\n`ls -ls`\n\n- List all files with a prefix/suffix\n\n`ls {{prefix}}*`\n`ls *{{suffix}}`\n\n- Sort the results size\n\n`ls -s   # by size`\n`ls -t   # by last modified date`\n`ls -U   # by creation date`\n\n- Reverse the order of the results\n\n`ls -r`\n"
+    }
+  }
+]
