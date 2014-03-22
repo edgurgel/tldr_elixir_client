@@ -7,6 +7,8 @@ Elixir command line client for [tldr](https://github.com/rprieto/tldr)
 $ tldr ls
 ```
 
+![TLDR ls](http://i.imgur.com/JXOaFYE.png)
+
 ## Building
 
 ```console
