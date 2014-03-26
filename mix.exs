@@ -3,7 +3,7 @@ defmodule TLDR.Mixfile do
 
   def project do
     [ app: :tldr,
-      version: "0.0.1",
+      version: "0.0.2",
       name: "TLDR",
       elixir: "~> 0.12.5",
       escript_main_module: TLDR,
