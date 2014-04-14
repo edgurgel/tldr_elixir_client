@@ -36,7 +36,7 @@ defmodule TLDR do
   def process_request_headers(headers), do: headers ++ [{"User-agent", "TLDR Elixir client"}]
 
   defp current_os do
-    case :os.type do
+    case OS.type do
       { :win32, _ } -> :common
       { :unix, :darwin } -> :osx
       { :unix, :sunos } -> :sunos
