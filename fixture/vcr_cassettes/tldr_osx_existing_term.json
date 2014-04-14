@@ -1,7 +1,7 @@
 [
   {
     "request": {
-      "url": "https://raw.github.com/rprieto/tldr/master/pages/common/ls.md",
+      "url": "https://raw.github.com/rprieto/tldr/master/pages/osx/brew.md",
       "headers": {
         "User-agent": "TLDR Elixir client"
       },
@@ -15,34 +15,34 @@
       "type": "ok",
       "status_code": 200,
       "headers": {
-        "Date": "Sat, 22 Mar 2014 07:54:30 GMT",
+        "Date": "Mon, 14 Apr 2014 07:29:53 GMT",
         "Server": "GitHub.com",
         "Content-Type": "text/plain; charset=utf-8",
         "Status": "200 OK",
-        "Strict-Transport-Security": "max-age=31536000",
         "X-XSS-Protection": "1; mode=block",
-        "X-Content-Type-Options": "nosniff",
         "X-Frame-Options": "deny",
         "Content-Security-Policy": "default-src *; script-src https://github.global.ssl.fastly.net https://ssl.google-analytics.com https://collector-cdn.github.com; style-src 'self' 'unsafe-inline' https://github.global.ssl.fastly.net; object-src https://github.global.ssl.fastly.net",
         "X-RateLimit-Limit": "100",
         "X-RateLimit-Remaining": "100",
-        "Access-Control-Allow-Origin": "https://render.github.com",
-        "X-Git-Blob-Oid": "c53fd4f52c09e65be5b09d1f29992338b240290c",
+        "Access-Control-Allow-Origin": "https://render.githubusercontent.com",
+        "X-Git-Blob-Oid": "aa0ecd48799526b9d48132071b45efa6ed2dd54f",
         "Content-Disposition": "inline",
         "Content-Transfer-Encoding": "binary",
-        "ETag": "\"67216f2fb511ba6f8b140bb55e50eae3\"",
-        "X-GitHub-Request-Id": "C71B4D18:5AA2:385E177:532D41B6",
-        "Content-Length": "410",
+        "ETag": "\"a0178cfd62712361c12c6bbf44416f63\"",
+        "X-GitHub-Request-Id": "CB399108:0205:2F0C66A:534B8DB5",
+        "Strict-Transport-Security": "max-age=31536000",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Length": "419",
         "Accept-Ranges": "bytes",
         "Via": "1.1 varnish",
-        "Age": "0",
-        "X-Served-By": "cache-sv61-SJC3",
+        "Age": "186",
+        "X-Served-By": "f0ee042be143fcba78041fc2f69c0aa7, cache-ak102-NZ",
         "X-Cache": "MISS",
         "X-Cache-Hits": "0",
         "Vary": "Accept-Encoding",
         "Cache-Control": "private"
       },
-      "body": "# ls\n\n> List directory contents\n\n- List all files, even hidden\n\n`ls -a`\n\n- List all file names (no extra info)\n\n`ls -A1`\n\n- List all files with their rights, groups, owner\n\n`ls -ls`\n\n- List all files with a prefix/suffix\n\n`ls {{prefix}}*`\n`ls *{{suffix}}`\n\n- Sort the results size\n\n`ls -s   # by size`\n`ls -t   # by last modified date`\n`ls -U   # by creation date`\n\n- Reverse the order of the results\n\n`ls -r`\n"
+      "body": "# brew\n\n> Package manager for OS X\n\n- Search formula\n\n`brew search {{text}}`\n\n- Install formula\n\n`brew install {{formula}}`\n\n- List installed formulae [with matching name]\n\n`brew list {{[text]}}`\n\n- Get latest version of installed formula (passing no formula updates all installed formulae)\n\n`brew upgrade {{[formula]}}`\n\n- Update brew\n\n`brew update`\n\n- Switch version of formula\n\n`brew switch {{formula}} {{version}}`\n"
     }
   }
 ]

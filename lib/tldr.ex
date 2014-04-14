@@ -28,17 +28,31 @@ defmodule TLDR do
     """
   end
   defp process(""), do: process(:help)
-  defp process(term), do: describe(term)
+  defp process(term), do: describe(current_os, term)
 
   def process_url(url) do
     "https://raw.github.com/rprieto/tldr/master/pages/" <> url
   end
   def process_request_headers(headers), do: headers ++ [{"User-agent", "TLDR Elixir client"}]
 
-  defp describe(term) do
-    response = get("common/#{term}.md")
+  defp current_os do
+    case OS.type do
+      { :win32, _ } -> :common
+      { :unix, :darwin } -> :osx
+      { :unix, :sunos } -> :sunos
+      { :unix, :linux } -> :linux
+      _ -> :common
+    end
+  end
+
+  defp describe(os, term) do
+    response = get("#{os}/#{term}.md")
     if response.status_code == 404 do
-      "Not found"
+      if os == :common do
+        "Not found"
+      else
+        describe(:common, term)
+      end
     else
       response.body |> format
     end

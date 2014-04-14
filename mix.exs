@@ -18,7 +18,10 @@ defmodule TLDR.Mixfile do
     [ { :httpoison, github: "edgurgel/httpoison", tag: "0.0.2" } ]
   end
   defp deps(:test) do
-    deps(:prod) ++ [ {:exvcr, github: "parroty/exvcr"} ]
+    deps(:prod) ++ [
+      { :exvcr, github: "parroty/exvcr" },
+      { :meck, "0.8.1", github: "eproxus/meck" }
+    ]
   end
   defp deps(:dev), do: deps(:prod)
 end
