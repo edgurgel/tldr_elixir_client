@@ -1,5 +1,5 @@
-# TLDR [![Build Status](https://travis-ci.org/edgurgel/tldr.svg?branch=master)](https://travis-ci.org/edgurgel/tldr)
-Elixir command line client for [tldr](https://github.com/rprieto/tldr)
+# TLDR Elixir Client [![Build Status](https://travis-ci.org/tldr-pages/tldr_elixir_client.svg?branch=master)](https://travis-ci.org/tldr-pages/tldr_elixir_client)
+Elixir command line client for [tldr](https://github.com/tldr-pages/tldr)
 
 ## Usage
 
