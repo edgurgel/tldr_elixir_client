@@ -31,7 +31,7 @@ defmodule TLDR do
   defp process(term), do: describe(current_os, term)
 
   def process_url(url) do
-    "https://raw.github.com/rprieto/tldr/master/pages/" <> url
+    "https://raw.github.com/tldr-pages/tldr/master/pages/" <> url
   end
   def process_request_headers(headers), do: headers ++ [{"User-agent", "TLDR Elixir client"}]
 
