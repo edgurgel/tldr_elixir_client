@@ -1,0 +1,79 @@
+[
+  {
+    "request": {
+      "url": "https://raw.githubusercontent.com/tldr-pages/tldr/master/pages/osx/ls.md",
+      "headers": {
+        "User-agent": "TLDR Elixir client"
+      },
+      "method": "get",
+      "body": "",
+      "options": {
+        "connect_timeout": 5000
+      }
+    },
+    "response": {
+      "type": "ok",
+      "status_code": 404,
+      "headers": {
+        "Date": "Thu, 01 May 2014 09:30:09 GMT",
+        "Server": "Apache",
+        "Content-Security-Policy": "default-src 'none'",
+        "Access-Control-Allow-Origin": "https://render.githubusercontent.com",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Frame-Options": "deny",
+        "X-Content-Type-Options": "nosniff",
+        "Strict-Transport-Security": "max-age=31536000",
+        "Content-Length": "9",
+        "Accept-Ranges": "bytes",
+        "Via": "1.1 varnish",
+        "X-Served-By": "cache-ak102-NZ",
+        "X-Cache": "MISS",
+        "X-Cache-Hits": "0",
+        "Vary": "Authorization,Accept-Encoding",
+        "Expires": "Thu, 01 May 2014 09:35:09 GMT",
+        "Source-Age": "0"
+      },
+      "body": "Not Found"
+    }
+  },
+  {
+    "request": {
+      "url": "https://raw.githubusercontent.com/tldr-pages/tldr/master/pages/common/ls.md",
+      "headers": {
+        "User-agent": "TLDR Elixir client"
+      },
+      "method": "get",
+      "body": "",
+      "options": {
+        "connect_timeout": 5000
+      }
+    },
+    "response": {
+      "type": "ok",
+      "status_code": 200,
+      "headers": {
+        "Date": "Thu, 01 May 2014 09:30:09 GMT",
+        "Server": "Apache",
+        "Content-Security-Policy": "default-src 'none'",
+        "Access-Control-Allow-Origin": "https://render.githubusercontent.com",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Frame-Options": "deny",
+        "X-Content-Type-Options": "nosniff",
+        "Strict-Transport-Security": "max-age=31536000",
+        "ETag": "\"c53fd4f52c09e65be5b09d1f29992338b240290c\"",
+        "Content-Type": "text/plain; charset=utf-8",
+        "Cache-Control": "max-age=300",
+        "Content-Length": "410",
+        "Accept-Ranges": "bytes",
+        "Via": "1.1 varnish",
+        "X-Served-By": "cache-ak102-NZ",
+        "X-Cache": "MISS",
+        "X-Cache-Hits": "0",
+        "Vary": "Authorization,Accept-Encoding",
+        "Expires": "Thu, 01 May 2014 09:35:09 GMT",
+        "Source-Age": "0"
+      },
+      "body": "# ls\n\n> List directory contents\n\n- List all files, even hidden\n\n`ls -a`\n\n- List all file names (no extra info)\n\n`ls -A1`\n\n- List all files with their rights, groups, owner\n\n`ls -ls`\n\n- List all files with a prefix/suffix\n\n`ls {{prefix}}*`\n`ls *{{suffix}}`\n\n- Sort the results size\n\n`ls -s   # by size`\n`ls -t   # by last modified date`\n`ls -U   # by creation date`\n\n- Reverse the order of the results\n\n`ls -r`\n"
+    }
+  }
+]

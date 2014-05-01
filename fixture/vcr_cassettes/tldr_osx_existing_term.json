@@ -1,0 +1,42 @@
+[
+  {
+    "request": {
+      "url": "https://raw.githubusercontent.com/tldr-pages/tldr/master/pages/osx/brew.md",
+      "headers": {
+        "User-agent": "TLDR Elixir client"
+      },
+      "method": "get",
+      "body": "",
+      "options": {
+        "connect_timeout": 5000
+      }
+    },
+    "response": {
+      "type": "ok",
+      "status_code": 200,
+      "headers": {
+        "Date": "Thu, 01 May 2014 09:30:08 GMT",
+        "Server": "Apache",
+        "Content-Security-Policy": "default-src 'none'",
+        "Access-Control-Allow-Origin": "https://render.githubusercontent.com",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Frame-Options": "deny",
+        "X-Content-Type-Options": "nosniff",
+        "Strict-Transport-Security": "max-age=31536000",
+        "ETag": "\"aa0ecd48799526b9d48132071b45efa6ed2dd54f\"",
+        "Content-Type": "text/plain; charset=utf-8",
+        "Cache-Control": "max-age=300",
+        "Content-Length": "419",
+        "Accept-Ranges": "bytes",
+        "Via": "1.1 varnish",
+        "X-Served-By": "cache-ak47-NZ",
+        "X-Cache": "MISS",
+        "X-Cache-Hits": "0",
+        "Vary": "Authorization,Accept-Encoding",
+        "Expires": "Thu, 01 May 2014 09:35:08 GMT",
+        "Source-Age": "0"
+      },
+      "body": "# brew\n\n> Package manager for OS X\n\n- Search formula\n\n`brew search {{text}}`\n\n- Install formula\n\n`brew install {{formula}}`\n\n- List installed formulae [with matching name]\n\n`brew list {{[text]}}`\n\n- Get latest version of installed formula (passing no formula updates all installed formulae)\n\n`brew upgrade {{[formula]}}`\n\n- Update brew\n\n`brew update`\n\n- Switch version of formula\n\n`brew switch {{formula}} {{version}}`\n"
+    }
+  }
+]
