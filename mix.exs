@@ -5,23 +5,18 @@ defmodule TLDR.Mixfile do
     [ app: :tldr,
       version: "0.0.2",
       name: "TLDR",
-      elixir: "~> 0.12.5",
+      elixir: "~> 0.13.1",
       escript_main_module: TLDR,
-      deps: deps(Mix.env) ]
+      deps: deps ]
   end
 
   def application do
     [ applications: [ :httpoison ] ]
   end
 
-  defp deps(:prod) do
-    [ { :httpoison, github: "edgurgel/httpoison", tag: "0.0.2" } ]
+  defp deps do
+    [ { :httpoison, github: "edgurgel/httpoison", tag: "0.1.0" },
+      { :exvcr, github: "parroty/exvcr", only: :test },
+      { :meck, "0.8.2", github: "eproxus/meck", override: true, only: :test } ]
   end
-  defp deps(:test) do
-    deps(:prod) ++ [
-      { :exvcr, github: "parroty/exvcr" },
-      { :meck, "0.8.1", github: "eproxus/meck" }
-    ]
-  end
-  defp deps(:dev), do: deps(:prod)
 end
