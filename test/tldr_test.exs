@@ -6,10 +6,8 @@ defmodule TLDR.TLDRTest do
 
   setup do
     new OS
-  end
-
-  teardown do
-    unload OS
+    on_exit fn -> unload end
+    :ok
   end
 
   test "call TLDR with an empty argument" do
