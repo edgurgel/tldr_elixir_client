@@ -13,7 +13,7 @@ $ tldr ls
 
 ```console
 mix deps.get
-mix escriptize
+mix escript.build
 ```
 
 `tldr` binary will be avaiable.
