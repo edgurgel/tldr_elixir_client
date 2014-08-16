@@ -54,27 +54,27 @@ defmodule TLDR do
         describe(:common, term)
       end
     else
-      response.body |> format
+      response.body |> format_md
     end
   end
 
-  defp format(markdown) do
+  defp format_md(markdown) do
     String.split(markdown, ~r/\n/)
     |> Enum.drop(2)
     |> Enum.map(fn(line) ->
-      format_line(line) <> reset
+      [[format_line(line) | reset] | "\n"]
     end)
-    |> Enum.join("\n")
+    |> IO.ANSI.format(true)
   end
 
   defp format_line("> " <> line) do
-    escape(white <> line)
+    [:white, line]
   end
   defp format_line("- " <> line) do
-    escape(green <> line)
+    [:green, line]
   end
   defp format_line("`" <> line) do
-    escape(black_background <> white <> String.rstrip(line, ?`))
+    [:black_background, :white, String.rstrip(line, ?`)]
   end
-  defp format_line(line), do: line
+  defp format_line(line), do: [line]
 end
