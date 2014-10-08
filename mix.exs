@@ -5,7 +5,7 @@ defmodule TLDR.Mixfile do
     [ app: :tldr,
       version: "0.0.2",
       name: "TLDR",
-      elixir: "~> 0.15.1",
+      elixir: "~> 0.15.1 or ~> 1.0.0",
       escript: [ main_module: TLDR],
       deps: deps ]
   end
@@ -15,8 +15,8 @@ defmodule TLDR.Mixfile do
   end
 
   defp deps do
-    [ { :httpoison, github: "edgurgel/httpoison", tag: "0.3.2" },
+    [ { :httpoison, "0.4.0" },
       { :exvcr, "~> 0.3.0", only: :test },
-      { :meck, "0.8.2", github: "eproxus/meck", override: true, only: :test } ]
+      { :meck, "~> 0.8.2", only: :test } ]
   end
 end
